@@ -13,7 +13,9 @@ const index = () => {
             <View style={tw`gap-4 m-4`}>
                 <Text style={tw`text-white font-bold text-lg text-center`}>Tap to Send</Text>
                 <Text style={tw`text-[#E4E4E4] font-bold text-lg text-center`}>Long tap to receive</Text>
-                <Image source={require('../../assets/images/lightening.png')} alt="lightening-image" />
+                <TouchableOpacity onPress={() => router.push('/dashboard')}>
+                    <Image source={require('../../assets/images/lightening.png')} alt="lightening-image" />
+                </TouchableOpacity>
             </View>
 
             <TouchableOpacity onPress={() => router.push('/dashboard')} style={tw`rounded-tl-3xl rounded-tr-3xl bg-[#101A1E] p-4 top-24`}>

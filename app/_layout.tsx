@@ -27,12 +27,13 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}> 
-      <Stack initialRouteName="Onboarding">
-        <Stack.Screen name="Onboarding" options={{ headerShown: false }} />
-        <Stack.Screen name="Home" options={{ headerShown: false }} />
-        <Stack.Screen name='Dashboard' options={{ headerShown: false }} />
+    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+      <Stack initialRouteName="onboarding">
+        <Stack.Screen name="onboarding" options={{ headerShown: false }} />
+        <Stack.Screen name="home" options={{ headerShown: false }} />
+        <Stack.Screen name="dashboard" options={{ headerShown: false }} />
+        <Stack.Screen name="+not-found" options={{ headerShown: false }} />
       </Stack>
-    </ThemeProvider> 
+    </ThemeProvider>
   );
 }
