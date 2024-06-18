@@ -13,12 +13,12 @@ const index = () => {
             <View style={tw`gap-4 m-4`}>
                 <Text style={tw`text-white font-bold text-lg text-center`}>Tap to Send</Text>
                 <Text style={tw`text-[#E4E4E4] font-bold text-lg text-center`}>Long tap to receive</Text>
-                <TouchableOpacity onPress={() => router.push('/dashboard')}>
+                <TouchableOpacity onPress={() => router.push('(profile)')}>
                     <Image source={require('../../assets/images/lightening.png')} alt="lightening-image" />
                 </TouchableOpacity>
             </View>
 
-            <TouchableOpacity onPress={() => router.push('/dashboard')} style={tw`rounded-tl-3xl rounded-tr-3xl bg-[#101A1E] p-4 top-24`}>
+            <TouchableOpacity onPress={() => router.push('profile')} style={tw`rounded-tl-3xl rounded-tr-3xl bg-[#101A1E] p-4 top-24`}>
                 <Image source={require("../../assets/images/drag-icon.png")} alt="drag-icon" style={tw`m-auto`} />
                 <View style={tw`flex flex-row justify-start items-center gap-48 min-w-full p-4`}>
                     <View style={tw`gap-2`}>
