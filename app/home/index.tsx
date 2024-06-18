@@ -3,7 +3,7 @@ import React from 'react'
 import tw from 'twrnc';
 import { router } from 'expo-router';
 
-const home = () => {
+const index = () => {
     return (
         <View style={tw`flex justify-center items-center gap-8 p-4 bg-[#020912] min-h-full`}>
             <View style={tw`pt-8`}>
@@ -31,4 +31,4 @@ const home = () => {
     )
 }
 
-export default home
+export default index;

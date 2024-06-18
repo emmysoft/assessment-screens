@@ -2,7 +2,8 @@ import { View, Text, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import tw from 'twrnc';
 import { Ionicons } from '@expo/vector-icons';
-const dashboard = () => {
+
+const index = () => {
     return (
         <View style={tw`flex justify-center items-center gap-5 bg-[#0B0B0B] h-full p-4`}>
             <View style={tw`p-4`}>
@@ -96,4 +97,4 @@ const dashboard = () => {
         </View>
     )
 }
-export default dashboard;
+export default index;
